@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>live coding 3</title>
+    <title>ass3 test</title>
     <style>
+  
         body{
-            background-color: antiquewhite; 
+            background-color: rgb(215, 175, 124); 
         }
        .parent1{
-        background-color: antiquewhite;
+        background-color: rgb(215, 175, 124);
           display: flex;
             flex:1;
             flex-flow:row wrap;
@@ -21,21 +22,34 @@
        .parent2{
         
         background-color: aqua;
-        height: 40cm;
+        background-image: url(https://www.bing.com/th?id=OIP.B0uYJvExC6JMP-ZI38ZJ0gHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+        background-size: cover;
+        height: 20cm;
        }
        .parent1child1{
             width: 25%;
             height: 100px;
-            
+            background-image: url(https://priyarajp.github.io/HTMLFILESEA21/logoPrepBytes.svg);
+            background-size: cover;
             display: flex;
             margin:10px ;
-            border-radius: 20px;
             box-sizing: border-box;
             align-items: center;
             flex-wrap: wrap;
             
            
        }
+       @media only screen and (max-width: 460px ){
+       
+        .parent1child1{
+           width: 100px;
+           height: 30px;
+       font-size: 10px;
+       margin: 0px;
+      color:white ;
+      
+      }
+   }
        .parent1child2{
             width: 60%;
             height: 100px;
@@ -51,14 +65,13 @@
             
            
        }
-       
-       
        button{
         width: 100px;
         height: 40px;
         font-size: 15px;
         margin: 10px;
         border-radius: 30px;
+        background-color: blueviolet;
        }
      
     @media only screen and (max-width: 460px ){
@@ -71,30 +84,25 @@
        background-color: blueviolet;
        }
     }
-       .parent{
-        margin: 0px;
-       }
-       .parent21{
+    .parent21{
         width: 150px;
         height: 50px;
-        background-color: blueviolet;
         margin: 10px;
-        font-size: 30px;
-        text-align: center;
-       }
-         
+        font-size: larger;
+        background-color: blueviolet;
+    }
+      
     @media only screen and (max-width: 460px ){
        
         .parent21{
-           width:10px;
-           height: 0px;
+           width: 65px;
+       font-size: 10px;
+       margin: 10px;
+      color:white ;
       background-color: blueviolet;
-      margin: 10px;
-    
-      
-      }
-    }
-    .child1 {
+      text-align: center;
+      }}
+      .child1 {
         background-color: green;
   position: relative;
   animation: mymove 5s infinite;
@@ -109,7 +117,21 @@
   from {left: 0px;}
   to {left: 200px;}
 }
-.child3 {
+.child2 {
+        background-color: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease;
+  margin: 10PX;
+
+  padding: 10px;
+ 
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}     .child3 {
         background-color: green;
   position: relative;
   animation: mymove 5s infinite;
@@ -123,8 +145,21 @@
 @keyframes mymove {
   from {left: 0px;}
   to {left: 200px;}
+}     .child4 {
+        background-color: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: ease-out;
+  margin: 10PX;
+
+  padding: 10px;
+ 
 }
-.child5 {
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}     .child5 {
         background-color: green;
   position: relative;
   animation: mymove 5s infinite;
@@ -139,40 +174,14 @@
   from {left: 0px;}
   to {left: 200px;}
 }
-.child2 {
-  position: relative;
-  animation: mymoveS 5s infinite;
-  animation-timing-function: ease;
-  margin: 10PX;
-  background-color: red;
-  padding: 10px;
-}
-
-@keyframes mymoveS {
-  from {left: 0px;}
-  to {left: 200px;}
-}
-.child4 {
-  position: relative;
-  animation: mymoveS 5s infinite;
-  animation-timing-function: ease-out;
-  margin: 10PX;
-  background-color: red;
-  padding: 10px;
-}
-
-@keyframes mymoveS {
-  from {left: 0px;}
-  to {left: 200px;}
-}
-        
-
+    
     </style>
 </head>
 <body>
-    
     <div class="parent1">
-        <div class="parent1child1">pb</div>
+        <div class="parent1child1">
+            
+        </div>
         <div class="parent1child2">
             <button>fack button</button>
             <button>fack button</button>
@@ -181,17 +190,14 @@
             <button>fack button</button>
             <button>fack button</button>
         </div>
-        
     </div>
     <div class="parent2">
-        <p><b>CSS Animation</b> 
-
-           <br> The animation-timing-function property specifies the speed curve of the animation. The following example shows some of the different speed curves that can be used:</p>
+        <p><b>CSS Animation</b><br>The  animation-timing-function property</p>
         <div class="parent21 child1">linear</div>
         <div class="parent21 child2">ease</div>
         <div class="parent21 child3">ease-in</div>
         <div class="parent21 child4">ease-out</div>
         <div class="parent21 child5">ease-in-out</div>
-        </div>
+    </div>
 </body>
 </html>
